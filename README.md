@@ -18,5 +18,6 @@ Plain HTML/CSS/JS, no build step. GitHub Pages serves the `main` branch.
 ## Editing
 
 - To change a text: edit it in `index.html` (RO) and in both dictionaries in `js/i18n.js` (RU, EN).
+- Techniques: each tile in `index.html` has a hidden `.tech-info` block (full name, one-line description, audience) that the detail panel shows on tap. Icons are `<symbol>`s in the sprite at the top of `index.html`.
 - To show the e-mail: in `index.html`, search for `EMAIL@EXAMPLE.COM`, replace it in both places and remove `hidden` from that `<li>`.
 - New photo: export at 1200px wide (and a 640px copy with the `-640` suffix) as JPEG, drop into `img/`.

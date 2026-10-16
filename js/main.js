@@ -48,6 +48,7 @@
       b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
     });
     updateToggleLabel();
+    renderTech();
     try { localStorage.setItem('lang', lang); } catch (e) { /* private mode */ }
   }
 
@@ -97,6 +98,28 @@
     document.addEventListener('click', function (e) { if (!header.contains(e.target)) setMenu(false); });
   }
 
+  // ---------- Technique tiles ----------
+  // Tapping a tile copies its hidden .tech-info into the shared detail panel.
+  var tiles = toArray(document.querySelectorAll('.tech'));
+  var detail = document.getElementById('tech-detail');
+  var currentTile = tiles[0] || null;
+
+  function renderTech() {
+    if (!detail || !currentTile) return;
+    var info = currentTile.parentNode.querySelector('.tech-info');
+    var icon = currentTile.querySelector('use').getAttribute('href');
+    detail.querySelector('use').setAttribute('href', icon);
+    detail.querySelector('.tech-detail-body').innerHTML = info.innerHTML;
+    tiles.forEach(function (tile) { tile.setAttribute('aria-pressed', String(tile === currentTile)); });
+  }
+
+  tiles.forEach(function (tile) {
+    tile.addEventListener('click', function () {
+      currentTile = tile;
+      renderTech();
+    });
+  });
+
   // ---------- Gallery scroll buttons (desktop only) ----------
   var gallery = document.getElementById('gallery');
   toArray(document.querySelectorAll('[data-scroll]')).forEach(function (b) {
@@ -110,7 +133,7 @@
   // ---------- Init ----------
   var initial = detectLang();
   if (initial !== 'ro') setLang(initial);
-  else updateToggleLabel();
+  else { updateToggleLabel(); renderTech(); }
 
   function toArray(list) { return Array.prototype.slice.call(list); }
 })();

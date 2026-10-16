@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Artem Studio „Van Gogh” — atelier de artă în Chișinău</title>
-<meta name="description" data-i18n-attr="content:meta.desc" content="Atelier de artă în centrul Chișinăului, din 2016. Cursuri de pictură, desen și arte aplicate pentru copii și adulți, în grupe mici. Materiale incluse.">
+<meta name="description" data-i18n-attr="content:meta.desc" content="Atelier de artă în centrul Chișinăului, din 2016. Pictură, desen și arte aplicate pentru copii și adulți, în grupe mici. Materiale incluse.">
 <meta name="theme-color" content="#FBF9F4">
 <link rel="canonical" href="https://artemstudio.github.io/">
 <link rel="alternate" hreflang="ro" href="https://artemstudio.github.io/">
@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="en" href="https://artemstudio.github.io/?lang=en">
 <link rel="alternate" hreflang="x-default" href="https://artemstudio.github.io/">
 <meta property="og:title" content="Artem Studio „Van Gogh” — atelier de artă în Chișinău">
-<meta property="og:description" content="Cursuri de pictură, desen și arte aplicate pentru copii și adulți, în centrul Chișinăului. Din 2016.">
+<meta property="og:description" content="Pictură, desen și arte aplicate pentru copii și adulți, în centrul Chișinăului. Din 2016.">
 <meta property="og:image" content="https://artemstudio.github.io/img/ulei-ratusca.jpg">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ro_RO">
@@ -27,7 +27,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Artem Studio „Van Gogh”",
-  "description": "Atelier de artă în centrul Chișinăului. Cursuri de pictură, desen și arte aplicate pentru copii și adulți.",
+  "description": "Atelier de artă în centrul Chișinăului. Pictură, desen și arte aplicate pentru copii și adulți.",
   "url": "https://artemstudio.github.io/",
   "telephone": "+37369176113",
   "image": "https://artemstudio.github.io/img/ulei-ratusca.jpg",
@@ -49,6 +49,38 @@
 </head>
 <body>
 
+<!-- Icon sprite: line icons drawn for this site, referenced with <use href="#i-…"> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-oil" viewBox="0 0 24 24"><path d="M20 4l-9 9"/><path d="M11 13l-1.5 1.5"/><path d="M9.5 14.5c-2.2 0-3.8 1.5-3.8 3.6 0 1-.6 2-1.7 2.4 3.3.6 6.5-1 6.5-4.2z"/></symbol>
+  <symbol id="i-acrylic" viewBox="0 0 24 24"><rect x="8" y="7" width="8" height="14" rx="2"/><path d="M10 7V4h4v3"/><path d="M8 12h8"/></symbol>
+  <symbol id="i-watercolor" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+  <symbol id="i-gouache" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a4 4 0 0 0 4-4c0-5.5-4.5-10-9-10z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="7.5" r="1"/></symbol>
+  <symbol id="i-pastel" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="3.6" rx="1.2"/><rect x="4" y="10.2" width="16" height="3.6" rx="1.2"/><rect x="4" y="15.9" width="16" height="3.6" rx="1.2"/></symbol>
+  <symbol id="i-graphic" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+  <symbol id="i-digital" viewBox="0 0 24 24"><rect x="3" y="4" width="13" height="16" rx="2"/><path d="M19 3h2v10l-1 2-1-2z"/></symbol>
+  <symbol id="i-ceramic" viewBox="0 0 24 24"><path d="M5 7h11v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M16 9h2a2.5 2.5 0 0 1 0 5h-2"/></symbol>
+  <symbol id="i-clay" viewBox="0 0 24 24"><path d="M9 3h6v3c3 1.5 4 4 4 7 0 4-3 7-7 7s-7-3-7-7c0-3 1-5.5 4-7z"/></symbol>
+  <symbol id="i-textile" viewBox="0 0 24 24"><path d="M8 4L4 7l2 3 2-1v11h8V9l2 1 2-3-4-3a4 4 0 0 1-8 0z"/></symbol>
+  <symbol id="i-wood" viewBox="0 0 24 24"><path d="M12 3c1 3 4 4.5 4 8a4 4 0 0 1-8 0c0-1.5.5-2.5 1-3.5.5 1.5 1.5 2 2 2 0-2.5 0-4 1-6.5z"/><path d="M5 21h14"/></symbol>
+  <symbol id="i-wax" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16l4-4M9 17l6-6M12 17l5-5"/></symbol>
+  <symbol id="i-weaving" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 4v16M12 4v16M16 4v16"/><path d="M4 11c1.3-1 2.7 1 4 0s2.7 1 4 0 2.7 1 4 0 2.7 1 4 0"/></symbol>
+  <symbol id="i-beads" viewBox="0 0 24 24"><path d="M3 14c3-6 6-6 9 0s6 6 9 0"/><circle cx="7.5" cy="11" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="14" r="1.6" fill="currentColor" stroke="none"/><circle cx="16.5" cy="11" r="1.6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-group" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 15.5a5 5 0 0 1 5.5 4.5"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 8l9-4 9 4-9 4z"/><path d="M3 8v9l9 4 9-4V8"/><path d="M12 12v9"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 6v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-6z"/><path d="M10 5v14" stroke-dasharray="2 2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
 <a class="skip" href="#main" data-i18n="a11y.skip">Sari la conținut</a>
 
 <header class="site-header" id="header">
@@ -57,7 +89,6 @@
       <img src="img/logo.jpg" alt="" width="44" height="44">
       <span class="brand-text"><b>Artem Studio</b><small data-i18n="brand.sub">Atelier de artă · Chișinău</small></span>
     </a>
-
     <nav class="nav" id="site-nav" aria-label="Meniu" data-i18n-attr="aria-label:nav.label">
       <a href="#despre" data-i18n="nav.about">Despre</a>
       <a href="#cursuri" data-i18n="nav.classes">Cursuri</a>
@@ -65,13 +96,11 @@
       <a href="#evenimente" data-i18n="nav.events">Evenimente</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
-
     <div class="lang" role="group" aria-label="Limba" data-i18n-attr="aria-label:a11y.lang">
       <button type="button" data-lang="ro" aria-pressed="true" lang="ro">RO</button>
       <button type="button" data-lang="ru" aria-pressed="false" lang="ru">RU</button>
       <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
     </div>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Deschide meniul">
       <span class="nav-toggle-bars" aria-hidden="true"></span>
     </button>
@@ -85,12 +114,12 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Atelier de artă în centrul Chișinăului · din 2016</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Atelier de artă · Chișinău · din 2016</p>
         <h1 data-i18n="hero.title">Pictură, desen și arte aplicate, pentru copii și adulți.</h1>
-        <p class="lead" data-i18n="hero.lead">Cursuri în grupe mici, cu îndrumare individuală. Paisprezece tehnici — de la pictura în ulei la ceramică și desen digital — cu toate materialele incluse.</p>
+        <p class="lead" data-i18n="hero.lead">Grupe mici, îndrumare individuală, materiale incluse.</p>
         <div class="actions">
           <a class="btn btn-primary" href="#contact" data-i18n="cta.trial">Programează o lecție de probă</a>
-          <a class="btn btn-ghost" href="#cursuri" data-i18n="cta.classes">Vezi cursurile</a>
+          <a class="btn btn-ghost" href="#cursuri" data-i18n="cta.classes">Vezi tehnicile</a>
         </div>
       </div>
       <figure class="hero-media">
@@ -99,13 +128,12 @@
         <figcaption class="badge"><b>5.0 ★</b><span data-i18n="hero.badge">pe Google</span></figcaption>
       </figure>
     </div>
-
     <div class="wrap">
       <dl class="facts">
-        <div><dt data-i18n="facts.1">Din 2016</dt><dd data-i18n="facts.1d">unul dintre primele ateliere de artă din Chișinău</dd></div>
-        <div><dt data-i18n="facts.2">14 tehnici</dt><dd data-i18n="facts.2d">pictură, desen și arte aplicate</dd></div>
-        <div><dt data-i18n="facts.3">Grupe mici</dt><dd data-i18n="facts.3d">atenție pentru fiecare cursant</dd></div>
-        <div><dt data-i18n="facts.4">Materiale incluse</dt><dd data-i18n="facts.4d">tot ce ai nevoie este la atelier</dd></div>
+        <div><svg><use href="#i-star"/></svg><dt data-i18n="facts.1">Din 2016</dt><dd data-i18n="facts.1d">printre primele ateliere din oraș</dd></div>
+        <div><svg><use href="#i-grid"/></svg><dt data-i18n="facts.2">14 tehnici</dt><dd data-i18n="facts.2d">pictură, desen, arte aplicate</dd></div>
+        <div><svg><use href="#i-group"/></svg><dt data-i18n="facts.3">Grupe mici</dt><dd data-i18n="facts.3d">îndrumare la fiecare șevalet</dd></div>
+        <div><svg><use href="#i-box"/></svg><dt data-i18n="facts.4">Materiale incluse</dt><dd data-i18n="facts.4d">nu aduci nimic</dd></div>
       </dl>
     </div>
   </section>
@@ -120,12 +148,11 @@
       <div class="about-copy">
         <p class="eyebrow" data-i18n="about.eyebrow">Despre atelier</p>
         <h2 id="h-despre" data-i18n="about.title">Un atelier cu tradiție, în centrul orașului.</h2>
-        <p data-i18n="about.p1">Artem Studio „Van Gogh” s-a deschis în 2016, pe strada Pușkin, și este unul dintre primele ateliere de artă din Chișinău. De atunci, aici au învățat să picteze, să deseneze și să modeleze sute de copii și adulți — mulți dintre ei fără nicio pregătire anterioară.</p>
-        <p data-i18n="about.p2">Lucrăm în grupe mici, iar fiecare cursant primește îndrumare la șevaletul lui. Scopul nu este o lucrare „ca la atelier”, ci una pe care să o duci acasă cu mândrie.</p>
+        <p class="lead" data-i18n="about.p">Deschis în 2016 pe strada Pușkin, printre primele ateliere de artă din Chișinău. Aici, copii și adulți învață să lucreze cu adevărat — și pleacă acasă cu o lucrare terminată.</p>
         <ul class="values">
-          <li><h3 data-i18n="val.1">Tehnică, nu șablon</h3><p data-i18n="val.1d">Înveți cum se amestecă o culoare, cum cade o umbră și de ce o compoziție funcționează — cunoștințe pe care le folosești la fiecare lucrare următoare.</p></li>
-          <li><h3 data-i18n="val.2">Îndrumare individuală</h3><p data-i18n="val.2d">Grupele sunt mici, iar profesorul lucrează cu fiecare cursant în parte, de la prima schiță până la ultima tușă.</p></li>
-          <li><h3 data-i18n="val.3">Lucrarea se termină când e gata</h3><p data-i18n="val.3d">Unele lucrări se încheie într-o ședință, altele în două sau trei. Nu grăbim procesul — rezultatul contează.</p></li>
+          <li><svg><use href="#i-layers"/></svg><div><h3 data-i18n="val.1">Tehnică, nu șablon</h3><p data-i18n="val.1d">Înveți cum funcționează culoarea, umbra și compoziția.</p></div></li>
+          <li><svg><use href="#i-person"/></svg><div><h3 data-i18n="val.2">Îndrumare individuală</h3><p data-i18n="val.2d">Profesorul lucrează cu fiecare cursant în parte.</p></div></li>
+          <li><svg><use href="#i-clock"/></svg><div><h3 data-i18n="val.3">Fără grabă</h3><p data-i18n="val.3d">Lucrarea se termină când e gata, nu când sună ceasul.</p></div></li>
         </ul>
       </div>
     </div>
@@ -153,61 +180,64 @@
         <li><img src="img/ceramica-640.jpg" srcset="img/ceramica-640.jpg 640w, img/ceramica.jpg 752w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="752" height="1280" alt="" loading="lazy"><span data-i18n="t.ceramic">Pictură pe ceramică</span></li>
         <li><img src="img/genti-pictate-640.jpg" srcset="img/genti-pictate-640.jpg 640w, img/genti-pictate.jpg 751w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="751" height="1280" alt="" loading="lazy"><span data-i18n="t.textile">Pictură pe textil</span></li>
         <li><img src="img/lumanare-640.jpg" srcset="img/lumanare-640.jpg 640w, img/lumanare.jpg 768w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="768" height="1280" alt="" loading="lazy"><span data-i18n="t.candle">Lumânare pictată</span></li>
-        <li><img src="img/biser-640.jpg" srcset="img/biser-640.jpg 640w, img/biser.jpg 762w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="762" height="1280" alt="" loading="lazy"><span data-i18n="t.beads">Bijuterii din biser</span></li>
+        <li><img src="img/biser-640.jpg" srcset="img/biser-640.jpg 640w, img/biser.jpg 762w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="762" height="1280" alt="" loading="lazy"><span data-i18n="t.beads">Macrameu și biser</span></li>
         <li><img src="img/desen-digital-640.jpg" srcset="img/desen-digital-640.jpg 640w, img/desen-digital.jpg 759w" sizes="(min-width: 960px) 24vw, (min-width: 640px) 40vw, 72vw" width="759" height="1280" alt="" loading="lazy"><span data-i18n="t.digital">Desen digital</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- CLASSES -->
+  <!-- TECHNIQUES -->
   <section id="cursuri" class="section" aria-labelledby="h-cursuri">
     <div class="wrap">
       <div class="section-head">
         <div>
           <p class="eyebrow" data-i18n="cls.eyebrow">Cursuri</p>
-          <h2 id="h-cursuri" data-i18n="cls.title">Paisprezece tehnici, în trei direcții.</h2>
+          <h2 id="h-cursuri" data-i18n="cls.title">Paisprezece tehnici. Alege de unde începi.</h2>
         </div>
-        <p class="lead" data-i18n="cls.lead">Poți începe cu orice tehnică și poți trece la alta oricând. Programul și ritmul se stabilesc împreună cu profesorul.</p>
+        <p class="hint" data-i18n="cls.hint">Atinge o tehnică pentru detalii.</p>
       </div>
 
-      <div class="cards cards-3">
-        <article class="card">
-          <h3 data-i18n="cat.1">Pictură</h3>
-          <p data-i18n="cat.1d">De la primele amestecuri de culoare la o pânză finisată, gata de înrămat.</p>
-          <ul class="tags">
-            <li data-i18n="t.oil">Pictură în ulei</li><li data-i18n="t.acrylic">Acril</li><li data-i18n="t.watercolor">Acuarelă</li><li data-i18n="t.gouache">Guașă</li><li data-i18n="t.pastel">Pastel</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3 data-i18n="cat.2">Desen</h3>
-          <p data-i18n="cat.2d">Proporții, umbre, perspectivă — baza oricărei imagini bune, cu creionul sau pe tabletă.</p>
-          <ul class="tags">
-            <li data-i18n="t.graphic">Desen grafic</li><li data-i18n="t.digital">Desen digital</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3 data-i18n="cat.3">Arte aplicate</h3>
-          <p data-i18n="cat.3d">Obiecte lucrate de mână, pe care le folosești sau le dăruiești: căni, genți, figurine, bijuterii.</p>
-          <ul class="tags">
-            <li data-i18n="t.ceramic">Pictură pe ceramică</li><li data-i18n="t.clay">Modelare cu lut</li><li data-i18n="t.textile">Pictură pe textil</li><li data-i18n="t.wood">Pirogravură</li><li data-i18n="t.wax">Gravură pe ceară</li><li data-i18n="t.weaving">Țesut</li><li data-i18n="t.beads">Macrameu și biser</li>
-          </ul>
-        </article>
+      <ul class="tech-grid" id="tech-grid">
+        <li><button type="button" class="tech" aria-pressed="true"><svg><use href="#i-oil"/></svg><span data-i18n="tile.oil">Ulei</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.oil">Pictură în ulei</h3><p data-i18n="d.oil">Straturi, răbdare, profunzime. O pânză pe care o duci acasă înrămată.</p><span data-i18n="aud.12">12+ și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-acrylic"/></svg><span data-i18n="tile.acrylic">Acril</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.acrylic">Acril</h3><p data-i18n="d.acrylic">Usucă repede și acoperă bine. Un tablou pe pânză într-o singură ședință.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-watercolor"/></svg><span data-i18n="tile.watercolor">Acuarelă</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.watercolor">Acuarelă</h3><p data-i18n="d.watercolor">Transparențe și lumină. Fiecare lucrare iese altfel.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-gouache"/></svg><span data-i18n="tile.gouache">Guașă</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.gouache">Guașă</h3><p data-i18n="d.gouache">Culori dense, catifelate. Aici se învață compoziția și contrastul.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-pastel"/></svg><span data-i18n="tile.pastel">Pastel</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.pastel">Pastel</h3><p data-i18n="d.pastel">Pigment pur, aplicat cu degetele. Treceri moi, lumină difuză.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-graphic"/></svg><span data-i18n="tile.graphic">Grafică</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.graphic">Desen grafic</h3><p data-i18n="d.graphic">Creion și cărbune. Proporții, umbre, perspectivă.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-digital"/></svg><span data-i18n="tile.digital">Digital</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.digital">Desen digital</h3><p data-i18n="d.digital">Tabletă și pensulă digitală. Aceleași reguli, alt instrument.</p><span data-i18n="aud.teens">Copii și adolescenți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-ceramic"/></svg><span data-i18n="tile.ceramic">Ceramică</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.ceramic">Pictură pe ceramică</h3><p data-i18n="d.ceramic">Căni, farfurii, suporturi — pictate de mână, pentru ani de zile.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-clay"/></svg><span data-i18n="tile.clay">Lut</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.clay">Modelare cu lut</h3><p data-i18n="d.clay">De la bulgăre la formă: figurine, vase, obiecte mici.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-textile"/></svg><span data-i18n="tile.textile">Textil</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.textile">Pictură pe textil</h3><p data-i18n="d.textile">Genți, tricouri, șepci. Lucrarea ta devine ceva ce porți.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-wood"/></svg><span data-i18n="tile.wood">Pirogravură</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.wood">Pirogravură</h3><p data-i18n="d.wood">Desenul ars în lemn, linie cu linie. Un rezultat care nu se șterge.</p><span data-i18n="aud.12">12+ și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-wax"/></svg><span data-i18n="tile.wax">Ceară</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.wax">Gravură pe ceară</h3><p data-i18n="d.wax">Zgârii stratul negru și imaginea apare din culorile ascunse dedesubt.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-weaving"/></svg><span data-i18n="tile.weaving">Țesut</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.weaving">Țesut</h3><p data-i18n="d.weaving">Fire și urzeală pe ramă. Covorașe și tapiserii mici.</p><span data-i18n="aud.all">Copii și adulți</span></div></li>
+        <li><button type="button" class="tech" aria-pressed="false"><svg><use href="#i-beads"/></svg><span data-i18n="tile.beads">Biser</span></button>
+          <div class="tech-info" hidden><h3 data-i18n="t.beads">Macrameu și biser</h3><p data-i18n="d.beads">Noduri și mărgele. Bijuterii și decorațiuni făcute de tine.</p><span data-i18n="aud.7">7+ și adulți</span></div></li>
+      </ul>
+
+      <div class="tech-detail" id="tech-detail" aria-live="polite">
+        <svg><use href="#i-oil"/></svg>
+        <div class="tech-detail-body"></div>
       </div>
 
       <h3 class="sub-title" data-i18n="who.title">Pentru cine</h3>
       <div class="cards cards-3 who">
-        <div class="who-item">
-          <h4 data-i18n="who.1">Copii, 5–11 ani</h4>
-          <p data-i18n="who.1d">Grupe pe vârste, în weekend dimineața. Dezvoltă răbdarea, atenția și încrederea de a crea.</p>
-        </div>
-        <div class="who-item">
-          <h4 data-i18n="who.2">Adolescenți, 12+</h4>
-          <p data-i18n="who.2d">Tehnici mai complexe, inclusiv pictură în ulei și desen digital. În weekend, după-amiaza.</p>
-        </div>
-        <div class="who-item">
-          <h4 data-i18n="who.3">Adulți</h4>
-          <p data-i18n="who.3d">Fără experiență necesară. Cursuri în timpul săptămânii și în weekend — scrie-ne și îți spunem când este loc.</p>
-        </div>
+        <div class="who-item"><span class="who-badge">5–11</span><div><h4 data-i18n="who.1">Copii</h4><p data-i18n="who.1d">Weekend, dimineața.</p></div></div>
+        <div class="who-item"><span class="who-badge">12+</span><div><h4 data-i18n="who.2">Adolescenți</h4><p data-i18n="who.2d">Weekend, după-amiaza.</p></div></div>
+        <div class="who-item"><span class="who-badge">18+</span><div><h4 data-i18n="who.3">Adulți</h4><p data-i18n="who.3d">În săptămână și în weekend.</p></div></div>
       </div>
     </div>
   </section>
@@ -218,25 +248,25 @@
       <div class="section-head">
         <div>
           <p class="eyebrow" data-i18n="pr.eyebrow">Prețuri</p>
-          <h2 id="h-preturi" data-i18n="pr.title">Un singur tarif, pentru orice tehnică.</h2>
+          <h2 id="h-preturi" data-i18n="pr.title">Un singur tarif, orice tehnică.</h2>
         </div>
-        <p class="lead" data-i18n="pr.lead">Valabil pentru copii și adulți. Toate materialele sunt incluse în preț.</p>
+        <p class="lead" data-i18n="pr.lead">Copii și adulți. Materiale incluse.</p>
       </div>
       <div class="cards cards-2">
         <div class="price">
           <h3 data-i18n="pr.2h">Ședință de 2 ore</h3>
           <p class="amount">250 <small data-i18n="lei">lei</small></p>
-          <p data-i18n="pr.2hd">Potrivită pentru majoritatea tehnicilor.</p>
+          <p data-i18n="pr.2hd">Majoritatea tehnicilor.</p>
         </div>
         <div class="price price-dark">
           <h3 data-i18n="pr.3h">Ședință de 3 ore</h3>
           <p class="amount">350 <small data-i18n="lei">lei</small></p>
-          <p data-i18n="pr.3hd">Pentru lucrări mai ample: pictură în ulei, modelare cu lut, pirogravură.</p>
+          <p data-i18n="pr.3hd">Ulei, lut, pirogravură.</p>
         </div>
       </div>
       <div class="notes">
-        <p class="note note-accent" data-i18n="pr.trial">Prima vizită este o lecție de probă. Vii, vezi atelierul, lucrezi puțin și decizi apoi.</p>
-        <p class="note" data-i18n="pr.incl">Materialele sunt incluse: pânză, vopsele, pensule, lut, lemn, mărgele. Nu trebuie să aduci nimic.</p>
+        <p class="note note-accent"><svg><use href="#i-ticket"/></svg><span data-i18n="pr.trial">Prima vizită este o lecție de probă.</span></p>
+        <p class="note"><svg><use href="#i-box"/></svg><span data-i18n="pr.incl">Pânză, vopsele, lut — totul este la atelier.</span></p>
       </div>
     </div>
   </section>
@@ -247,16 +277,15 @@
       <div class="section-head">
         <div>
           <p class="eyebrow" data-i18n="ev.eyebrow">Evenimente</p>
-          <h2 id="h-evenimente" data-i18n="ev.title">Ateliere pentru grupuri și ocazii speciale.</h2>
+          <h2 id="h-evenimente" data-i18n="ev.title">Pentru grupuri și ocazii speciale.</h2>
         </div>
-        <p class="lead" data-i18n="ev.lead">Organizăm evenimente la atelier sau în locația aleasă de voi — cu materiale, îndrumare și un rezultat pe care fiecare participant îl ia acasă.</p>
       </div>
       <div class="cards cards-3">
         <article class="event">
           <img src="img/zi-de-nastere-640.jpg" srcset="img/zi-de-nastere-640.jpg 640w, img/zi-de-nastere.jpg 758w" sizes="(min-width: 720px) 33vw, 100vw" width="758" height="1280" alt="Atelierul pregătit pentru o zi de naștere" data-i18n-attr="alt:img.ev1" loading="lazy">
           <div class="event-body">
             <h3 data-i18n="ev.1">Zile de naștere</h3>
-            <p data-i18n="ev.1d">Două ore de atelier pentru copii, apoi tort și fotografii. Spațiul este doar al vostru, iar de curățenie ne ocupăm noi.</p>
+            <p data-i18n="ev.1d">Două ore de atelier, apoi tort și poze.</p>
             <p class="meta" data-i18n="ev.1m">5–14 ani · până la 12 copii</p>
           </div>
         </article>
@@ -264,7 +293,7 @@
           <img src="img/genti-pictate-640.jpg" srcset="img/genti-pictate-640.jpg 640w, img/genti-pictate.jpg 751w" sizes="(min-width: 720px) 33vw, 100vw" width="751" height="1280" alt="Genți de pânză pictate la un masterclass" data-i18n-attr="alt:img.ev2" loading="lazy">
           <div class="event-body">
             <h3 data-i18n="ev.2">Masterclass-uri tematice</h3>
-            <p data-i18n="ev.2d">Pictură pe haine și genți, lucrări de sezon și de sărbători. Anunțăm datele pe Instagram.</p>
+            <p data-i18n="ev.2d">Pictură pe haine, lucrări de sezon și de sărbători.</p>
             <p class="meta" data-i18n="ev.2m">Copii și adulți</p>
           </div>
         </article>
@@ -272,14 +301,14 @@
           <img src="img/copii-lut-640.jpg" srcset="img/copii-lut-640.jpg 640w, img/copii-lut.jpg 770w" sizes="(min-width: 720px) 33vw, 100vw" width="770" height="1280" alt="Copii modelând lut la atelier" data-i18n-attr="alt:img.ev3" loading="lazy">
           <div class="event-body">
             <h3 data-i18n="ev.3">Grupuri și companii</h3>
-            <p data-i18n="ev.3d">Team-building, întâlniri cu prietenii sau clase întregi. La atelier sau la sediul vostru, cu factură pentru companii.</p>
-            <p class="meta" data-i18n="ev.3m">6–30 de persoane · 2–3 ore</p>
+            <p data-i18n="ev.3d">Team-building sau o seară cu prietenii, la atelier sau la voi.</p>
+            <p class="meta" data-i18n="ev.3m">6–30 de persoane</p>
           </div>
         </article>
       </div>
       <div class="actions">
         <a class="btn btn-dark" href="viber://chat?number=%2B37369176113" data-i18n="ev.cta">Cere o ofertă</a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/asvangogh_/" rel="noopener" data-i18n="ev.insta">Vezi datele pe Instagram</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/asvangogh_/" rel="noopener"><svg><use href="#i-insta"/></svg><span>Instagram</span></a>
       </div>
     </div>
   </section>
@@ -297,17 +326,17 @@
       <div class="cards cards-3">
         <figure class="review">
           <span class="stars" aria-label="5 din 5" data-i18n-attr="aria-label:rv.stars">★★★★★</span>
-          <blockquote data-i18n="rv.1">Două zile, câte două ore de muncă la un tablou… sunt impresionată ce mult i-a plăcut copilului nostru. Atelierul dezvoltă creativitatea, răbdarea, disciplina și exprimarea liberă, colorată a copilului. Mulțumim!</blockquote>
+          <blockquote data-i18n="rv.1">Sunt impresionată ce mult i-a plăcut copilului nostru. Atelierul dezvoltă creativitatea, răbdarea și disciplina.</blockquote>
           <figcaption data-i18n="rv.1a">Marina Toacă · Facebook</figcaption>
         </figure>
         <figure class="review">
           <span class="stars" aria-label="5 din 5" data-i18n-attr="aria-label:rv.stars">★★★★★</span>
-          <blockquote data-i18n="rv.2">Vin la atelier cu fiica mea de aproape doi ani și este una dintre cele mai frumoase activități pe care le facem împreună. Am început de la zero și am descoperit acuarela, uleiul și guașa.</blockquote>
+          <blockquote data-i18n="rv.2">Vin cu fiica mea de aproape doi ani — una dintre cele mai frumoase activități pe care le facem împreună.</blockquote>
           <figcaption data-i18n="rv.g">Recenzie Google</figcaption>
         </figure>
         <figure class="review">
           <span class="stars" aria-label="5 din 5" data-i18n-attr="aria-label:rv.stars">★★★★★</span>
-          <blockquote data-i18n="rv.3">Ora de lut mi-a depășit așteptările. Începător total, am plecat cu două sculpturi de animale de care sunt cu adevărat mândru. Îndrumare clară și răbdare la fiecare pas.</blockquote>
+          <blockquote data-i18n="rv.3">Începător total, am plecat cu două sculpturi de care sunt cu adevărat mândru.</blockquote>
           <figcaption data-i18n="rv.g">Recenzie Google</figcaption>
         </figure>
       </div>
@@ -330,13 +359,12 @@
         <div class="loc-copy">
           <p class="address" data-i18n="loc.address">Strada Pușkin 5b, Chișinău</p>
           <ol class="steps">
-            <li data-i18n="loc.s1">Intrați în curtea interioară a clădirii.</li>
-            <li data-i18n="loc.s2">Urcați la etajul 4.</li>
-            <li data-i18n="loc.s3">Atelierul este ultima ușă pe stânga.</li>
+            <li data-i18n="loc.s1">Curtea interioară a clădirii.</li>
+            <li data-i18n="loc.s2">Etajul 4.</li>
+            <li data-i18n="loc.s3">Ultima ușă pe stânga.</li>
           </ol>
           <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Strada%20Pu%C8%99kin%205b%2C%20Chi%C8%99in%C4%83u%2C%20Moldova" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span data-i18n="loc.open">Deschide în Google Maps</span>
+            <svg><use href="#i-pin"/></svg><span data-i18n="loc.open">Deschide în Google Maps</span>
           </a>
         </div>
       </div>
@@ -351,34 +379,16 @@
           <p class="eyebrow" data-i18n="ct.eyebrow">Contact</p>
           <h2 id="h-contact" data-i18n="ct.title">Scrie-ne sau sună.</h2>
         </div>
-        <p class="lead" data-i18n="ct.lead">Răspundem în aceeași zi. Pentru programări, cel mai rapid este un mesaj pe Viber sau WhatsApp.</p>
+        <p class="lead" data-i18n="ct.lead">Răspundem în aceeași zi.</p>
       </div>
       <ul class="contact-list">
-        <li><a class="contact primary" href="tel:+37369176113">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
-          <span><small data-i18n="ct.call">Telefon</small><b>+373 691 76 113</b></span>
-        </a></li>
-        <li><a class="contact" href="viber://chat?number=%2B37369176113">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
-          <span><small data-i18n="ct.msg">Mesaj pe</small><b>Viber</b></span>
-        </a></li>
-        <li><a class="contact" href="https://wa.me/37369176113" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
-          <span><small data-i18n="ct.msg">Mesaj pe</small><b>WhatsApp</b></span>
-        </a></li>
+        <li><a class="contact primary" href="tel:+37369176113"><span class="ico"><svg><use href="#i-phone"/></svg></span><span><small data-i18n="ct.call">Telefon</small><b>+373 691 76 113</b></span></a></li>
+        <li><a class="contact" href="viber://chat?number=%2B37369176113"><span class="ico"><svg><use href="#i-chat"/></svg></span><span><small data-i18n="ct.msg">Mesaj pe</small><b>Viber</b></span></a></li>
+        <li><a class="contact" href="https://wa.me/37369176113" rel="noopener"><span class="ico"><svg><use href="#i-chat"/></svg></span><span><small data-i18n="ct.msg">Mesaj pe</small><b>WhatsApp</b></span></a></li>
         <!-- E-mail: replace EMAIL@EXAMPLE.COM in both places and remove `hidden` -->
-        <li hidden><a class="contact" href="mailto:EMAIL@EXAMPLE.COM">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
-          <span><small data-i18n="ct.email">E-mail</small><b>EMAIL@EXAMPLE.COM</b></span>
-        </a></li>
-        <li><a class="contact" href="https://www.instagram.com/asvangogh_/" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span>
-          <span><small>Instagram</small><b>@asvangogh_</b></span>
-        </a></li>
-        <li><a class="contact" href="https://www.facebook.com/divertismentpictura/" rel="noopener">
-          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
-          <span><small>Facebook</small><b data-i18n="ct.fb">Pagina atelierului</b></span>
-        </a></li>
+        <li hidden><a class="contact" href="mailto:EMAIL@EXAMPLE.COM"><span class="ico"><svg><use href="#i-mail"/></svg></span><span><small data-i18n="ct.email">E-mail</small><b>EMAIL@EXAMPLE.COM</b></span></a></li>
+        <li><a class="contact" href="https://www.instagram.com/asvangogh_/" rel="noopener"><span class="ico"><svg><use href="#i-insta"/></svg></span><span><small>Instagram</small><b>@asvangogh_</b></span></a></li>
+        <li><a class="contact" href="https://www.facebook.com/divertismentpictura/" rel="noopener"><span class="ico"><svg><use href="#i-fb"/></svg></span><span><small>Facebook</small><b data-i18n="ct.fb">Pagina atelierului</b></span></a></li>
       </ul>
     </div>
   </section>
@@ -391,16 +401,9 @@
   </div>
 </footer>
 
-<!-- Mobile quick actions -->
 <div class="quickbar" aria-label="Acțiuni rapide" data-i18n-attr="aria-label:a11y.quick">
-  <a class="btn btn-primary" href="tel:+37369176113">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-    <span data-i18n="bar.call">Sună</span>
-  </a>
-  <a class="btn btn-dark" href="viber://chat?number=%2B37369176113">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg>
-    <span data-i18n="bar.msg">Scrie-ne</span>
-  </a>
+  <a class="btn btn-primary" href="tel:+37369176113"><svg><use href="#i-phone"/></svg><span data-i18n="bar.call">Sună</span></a>
+  <a class="btn btn-dark" href="viber://chat?number=%2B37369176113"><svg><use href="#i-chat"/></svg><span data-i18n="bar.msg">Scrie-ne</span></a>
 </div>
 
 <script src="js/i18n.js" defer></script>
