@@ -72,6 +72,7 @@
   <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
   <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8"/><path d="M12 8v13"/><path d="M12 8c-1.5-3-5-3.5-5-1.5S10 8 12 8zm0 0c1.5-3 5-3.5 5-1.5S14 8 12 8z"/></symbol>
   <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 6v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-6z"/><path d="M10 5v14" stroke-dasharray="2 2"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></symbol>
@@ -118,7 +119,7 @@
         <h1 data-i18n="hero.title">Pictură, desen și arte aplicate, pentru copii și adulți.</h1>
         <p class="lead" data-i18n="hero.lead">Grupe mici, îndrumare individuală, materiale incluse.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#contact" data-i18n="cta.trial">Programează o lecție de probă</a>
+          <a class="btn btn-primary" href="#contact" data-i18n="cta.trial">Programează o lecție gratuită</a>
           <a class="btn btn-ghost" href="#cursuri" data-i18n="cta.classes">Vezi tehnicile</a>
         </div>
       </div>
@@ -265,9 +266,17 @@
         </div>
       </div>
       <div class="notes">
-        <p class="note note-accent"><svg><use href="#i-ticket"/></svg><span data-i18n="pr.trial">Prima vizită este o lecție de probă.</span></p>
+        <p class="note note-accent"><svg><use href="#i-ticket"/></svg><span data-i18n="pr.trial">Prima lecție este gratuită.</span></p>
         <p class="note"><svg><use href="#i-box"/></svg><span data-i18n="pr.incl">Pânză, vopsele, lut — totul este la atelier.</span></p>
       </div>
+      <aside class="promo">
+        <svg><use href="#i-gift"/></svg>
+        <div>
+          <p class="promo-label" data-i18n="promo.label">Promoție</p>
+          <h3 data-i18n="promo.title">Adu un prieten, primești 30% reducere.</h3>
+          <p data-i18n="promo.text">La următoarea ta ședință. Prietenul tău vine gratuit la prima lecție.</p>
+        </div>
+      </aside>
     </div>
   </section>
 

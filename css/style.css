@@ -259,6 +259,14 @@ h4 { font-size: 1.1rem; }
 .note svg { width: 24px; height: 24px; stroke-width: 1.75; flex: none; color: var(--gold-hover); }
 .note-accent { background: var(--gold); border-color: var(--gold); font-weight: 600; }
 .note-accent svg { color: var(--ink); }
+.promo {
+  margin-top: 16px; padding: 24px 24px; border-radius: var(--radius-lg); background: var(--ink); color: #fff;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.promo > svg { width: 36px; height: 36px; stroke-width: 1.5; color: var(--gold); flex: none; margin-top: 2px; }
+.promo-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.promo h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; letter-spacing: -0.01em; margin-bottom: 6px; }
+.promo p:last-child { color: var(--on-dark); font-size: 0.98rem; }
 
 /* ---------- Events ---------- */
 .event { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
